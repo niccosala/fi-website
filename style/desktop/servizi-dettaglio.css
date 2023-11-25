@@ -1,0 +1,86 @@
+form {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form table {
+    width: 100%;
+    margin-top: 3%;
+}
+
+form table tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+form table td {
+    width: 50%;
+    padding: 2% 4%;
+}
+
+form table td:nth-child(even) {
+    text-align: right;
+}
+
+form table td:nth-child(odd) {
+    text-align: left;
+}
+
+form textarea {
+    width: 92%;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 3% 3.5%;
+}
+
+form span {
+    width: 100%;
+}
+
+form input[type="file"] {
+    margin-top: 5%;
+}
+
+.form-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-controls input {
+    width: 45%;
+    padding: 1.5% 1%;
+    margin: 0;
+}
+
+.form-controls input:first-child {
+    margin-left: 4%;
+}
+
+.form-controls input:last-child {
+    margin-right: 4%;
+}
+
+.back {
+    position: absolute;
+    top: 13.5vh;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+    color: var(--maincolor);
+    text-decoration: none;
+    animation: hello-motion .5s;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/desktop/structure.css">
+    <link rel="stylesheet" href="style/desktop/common.css">
+    <link rel="stylesheet" href="style/desktop/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <script src="script/desktop/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+	<title>Federico Invernizzi: Homepage</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <img src="resources/images/logo/horizontal/FI_logo_affiancato.png" class="icon" alt="Federico Inernizzi"/>
+        </div>
+        <div>
+            <a class="selected">Home</a>
+            <a href="chi-sono.html">Chi sono</a>
+            <a href="blog.html">Blog</a>
+            <a href="servizi.html">Servizi</a>
+            <a href="testimonianze.html">Testimonianze</a>
+            <a href="contattami.html">Contattami</a>
+        </div>
+    </div>
+
+    <div class="header-stretched">
+        <div>
+            <svg onclick="openMenu();" id="menu-button"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </div>
+        <div>
+            <img src="resources/images/logo/horizontal/FI_logo_affiancato.png" class="icon" alt="Federico Inernizzi"/>
+        </div>
+    </div>
+    <div class="header-ghost"></div>
+
+    <!-- Body -->
+    <div class="welcome-section" style="background-image: url(resources/images/backgrounds/index.jpg);">
+        <div class="video-section">
+            <div>
+                <h1>
+                    La tua porta d'accesso al mondo assicurativo e finanziario
+                </h1>
+                <hr />
+                <iframe id="welcome-video" src="https://www.youtube.com/embed/oh904_HdkwY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!--img class="index-test" src="resources/images/services/test.png" alt=""-->
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="inner-section">
+        <h3>Benvenuto!</h3>
+        Se non sai da dove cominciare per <b>imparare a tutelare 
+        correttamente te stesso, la tua famiglia e il tuo patrimonio</b>, 
+        sei nel posto giusto. All’interno di questo sito troverai diversi 
+        <b>strumenti per aumentare la tua conoscenza assicurativa e patrimoniale</b> 
+        come <b>articoli</b> e <b>video</b>.
+        <br><br>
+        Sono anche presenti informazioni relative a:
+        <br><br>
+        <ul>
+            <li><a href="chi-sono.html" class="text-link">Chi sono;</a></li>
+            <li>La mia <a href="chi-sono.html#formazione" class="text-link">formazione;</a></li>
+            <li>I <a href="servizi.html" class="text-link">servizi</a> che posso offrirti;</li>
+            <li>Le <a href="testimonianze.html" class="text-link">testimonianze</a> di chi ha svolto questo percorso prima di te;</li>
+            <li>Come <a href="contattami.html" class="text-link">contattarmi</a>.</li>
+        </ul>
+    </div>
+
+        <br>
+        <h4>Ultimi aggiornamenti</h4>
+        <div class="updates">
+            <div class="updates-article" onclick="location.href='articles/tfr_in_azienda_o_fondo_pensione.html';">
+                <img src="resources/images/articles/tfr_in_azienda_o_fondo_pensione.jpeg" alt="">
+                <span class="updates-article-description">
+                    Sicuramente se sei un lavoratore dipendente ti &egrave; stato chiesto 
+                    dove vuoi destinare il tuo TFR: se tenerlo in azienda o versarlo in un
+                    fondo pensione. Oggi vediamo quali sono i pro e i contro di entrambe le
+                    soluzioni e qual &egrave; la scelta migliore da fare. Iniziamo col 
+                    dire che cos’&egrave; il TFR: il TFR (o trattamento di fine rapporto) 
+                    &egrave; una parte dello stipendio (per essere precisi il 6,91% della 
+                    retribuzione lorda), che viene accantonato ogni anno e pagato al 
+                    lavoratore 
+                </span>
+                <span><b>Risparmio e investimento</b><br>
+                20 novembre 2023</span>
+            </div>
+
+            <div class="updates-article" onclick="location.href='articles/polizza_incendio_mutuo.html';">
+                <img src="resources/images/articles/polizza_incendio_mutuo.jpeg" alt="">
+                <span class="updates-article-description">
+                    Se hai richiesto un mutuo per l’acquisto di una casa, la banca ti ha 
+                    proposto la polizza incendio, scoppio, esplosione. Che polizza &egrave;
+                    e perch&egrave; &egrave; obbligatoria? Lo vediamo in questo articolo!
+                    La polizza incendio, scoppio, esplosione, &egrave; semplicemente 
+                    un’assicurazione che risarcisce i danni subiti da un’abitazione in 
+                    caso di incendio. La particolarit&agrave; sta nel fatto che su questa
+                    polizza viene apposto il vincolo della banca, ossia una clausola 
+                </span>
+                <span><b>Casa e famiglia</b><br>
+                13 novembre 2023</span>
+            </div>
+
+            <div class="updates-article" onclick="location.href='articles/franchigia_amica_o_nemica.html';">
+                <img src="resources/images/articles/franchigia_amica_o_nemica.jpeg" alt="">
+                <span class="updates-article-description">
+                    Oggi parliamo di “franchigia”, uno dei termini tecnici più comuni nel 
+                    linguaggio assicurativo, e un concetto ormai conosciuto… ma forse non 
+                    del tutto. Per portare tutti a bordo iniziamo col dire che cos’&egrave; 
+                    la franchigia. La franchigia &egrave; quella parte di danno che rimane a 
+                    carico dell’assicurato, e che, dunque, non &egrave; coperto dall’assicurazione.
+                </span>
+                <span><b>Altro</b><br>
+                13 novembre 2023</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section resize-m">
+        <h3>Il progetto</h3>
+        <br>
+        Nel corso degli anni mi sono reso conto che <b>la maggior parte delle persone 
+        ha un livello di conoscenza molto scarso in ambito assicurativo e 
+        patrimoniale</b>.
+        <br><br>
+        Di conseguenza molte famiglie e aziende gestiscono male le risorse che 
+        hanno a disposizione e, cosa ancora più grave, sono esposte a rischi 
+        economicamente devastanti senza neanche rendersene conto.
+        <br><br>
+        Il modo in cui normalmente lavorano <b>assicurazioni, banche e poste</b> non 
+        aiuta a migliorare questa situazione. Gli operatori del settore, infatti, 
+        <b>antepongono spesso il loro interesse a quello del cliente</b>, incentivando 
+        l’acquisto dei prodotti che garantiscono maggiori provvigioni o che 
+        rientrano nell’iniziativa commerciale del mese.
+        <br><br>
+        Questo modo di operare, unito ad un marketing poco brillante 
+        (“vieni da noi che spendi meno”), ha contribuito negli anni a consolidare 
+        in Italia una <b>scarsissima cultura e percezione dell’assicurazione e della 
+        gestione patrimoniale e finanziaria</b>.
+        <br><br>
+        Questo progetto nasce con l’obiettivo di <b>informare le persone</b> su queste 
+        tematiche, per metterle nelle condizioni di <b>prendere decisioni corrette 
+        e difendersi dai venditori di prodotti</b>.
+    </div>
+
+    <div class="section">
+        <h3>Scopri i servizi</h3>
+        <br>
+        <div class="services-container">
+            <div class="service">
+                <h5>Check-Up Gratuito</h5>
+                Analizzo e commento le tue posizioni assicurative e finanziarie in 
+                essere, gratuitamente e senza vincoli/impegno, per aiutarti a 
+                comprendere la loro effettiva qualità e adeguatezza alle tue esigenze.
+                <br><br><br><br>
+                <a href="analisi-posizioni.html">Effettua il Check-Up</a>
+            </div>
+            <div class="service">
+                <h5>Diagnosi 360°</h5>
+                Eseguo un’analisi completa della tua attuale situazione famigliare, 
+                lavorativa e patrimoniale e ti aiuto ad impostare la gestione 
+                assicurativa e patrimoniale ottimale per te.
+                <br><br><br><br>
+                <a href="pianificazione-assicurativa.html">Prenota un Incontro</a>
+            </div>
+            <div class="service">
+                <h5>Evento</h5>
+                Incontro online o dal vivo per portare consapevolezza assicurativa 
+                e finanziaria all’interno di un’azienda, di un’associazione, 
+                di un team di persone.
+                <br><br><br><br>
+                <a href="evento.html">Prenota un Evento</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="split-thirty-seventy resize-s">
+            <div>
+                <img src="resources/images/me/fi13.png" alt="Immagine"/>
+            </div>
+            <div>
+                <h4>Cosa vuol dire affidarsi ad un consulente assicurativo e patrimoniale?</h4>
+                <br>
+                Significa affidarsi ad un <b>professionista</b> che analizza la tua situazione 
+                famigliare, lavorativa, finanziaria e <b>ti aiuta prendere le decisioni 
+                corrette</b> in ambito assicurativo e patrimoniale, seguendo un processo di 
+                consulenza <b>indipendente dalla vendita di prodotti</b>. 
+                <br>
+                Il modo in cui gestisci e proteggi il tuo patrimonio &egrave; uno dei fattori 
+                che incide maggiormente sulla tua <b>qualità di vita</b> e sulla <b>capacità di 
+                realizzare gli obiettivi</b> personali e professionali che ti sei prefissato. 
+                Per questo motivo &egrave; fondamentale affidarsi ad un vero consulente 
+                assicurativo e patrimoniale ed evitare i venditori 
+                (li riconosci perch&egrave; non parlano di te ma parlano di quanto siano 
+                fantastici i loro prodotti) e il “fai da te”.
+            </div>
+        </div>
+    </div>
+
+    <div class="section wider">
+        <h1>Mission</h1>
+        <h5>Aiutare le persone a realizzare i propri sogni.</h5>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+
+            <span>
+                L’intermediario &egrave; soggetto alla vigilanza dell’IVASS 
+                – registro unico degli intermediari - 
+                RUI n. E000637324
+            </span>
+        </div>
+        <div>
+            <a>Privacy</a>
+            <a>Cookie</a>
+            <a>Trasparenza</a>
+            <a>Contattami</a>
+            <a>Lavora con me</a>
+
+            <span>
+                &copy;
+                <b><script>document.write(new Date().getFullYear())</script></b>
+                Federico Invernizzi Consulente Assicurativo e Patrimoniale
+            </span>
+        </div>
+    </div>
+
+    <!-- Components -->
+    <div id="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" onclick="closeMenu()" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+        </svg>
+        <a class="selected">Home</a>
+        <a href="chi-sono.html">Chi sono</a>
+        <a href="blog.html">Blog</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="testimonianze.html">Testimonianze</a>
+        <a href="contattami.html">Contattami</a>
+    </div>
+
+    <span id="dark-panel" onclick="closeMenu()"></span>
+
+</body>
+</html>

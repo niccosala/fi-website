@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,700');
+
+:root {
+    --maincolor: #001E60;
+    --mainbgcolor: rgba(11, 61, 168, 0.1);
+}
+
+body, 
+html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html, 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span {
+    font-family: 'Assistant', sans-serif;
+    font-size: 103.5%;
+}
+
+h1.xl {
+    font-size: 140%;
+    background-color: blue;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-shadow: 0 0 2px rgba(0, 0, 0, .3);
+}
+ 
+h1,
+h3,
+h6 {
+     text-align: center;
+ }
+ 

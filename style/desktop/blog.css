@@ -1,0 +1,132 @@
+.blog-container {
+    min-height: 82vh;
+}
+
+.inner-section {
+    margin: 3% 10%;
+    width: 80%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.inner-section span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.inner-section button {
+    border: 0;
+    padding: 1% 1%;
+    background-color: var(--maincolor);
+    color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .25);
+    border-radius: .4em;
+    text-align: center;
+    margin: 0 .5%;
+    opacity: .8;
+    transition: .2s;
+}
+
+.inner-section button:hover {
+    opacity: 1;
+}
+
+.blog-news {
+    margin: -1.5% 8.4%;
+    width: 83.2%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.blog-article {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .25);
+    border-radius: .4em;
+    margin: 2% 2%;
+    cursor: pointer;
+    position: relative;
+}
+
+.blog-article img {
+    width: 100%;
+    border-radius: .4em .4em 0 0;
+}
+
+.blog-article div:last-child {
+    padding: 4%;
+}
+
+.blog-article-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+}
+
+.blog-article-description::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 3.5em; 
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .2), white 100%);
+}
+
+.blog-date {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    background: rgba(255, 255, 255, 0.87);
+    padding: 1% 2%;
+    border-radius: .4em;
+    font-size: 80%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.blog-class {
+    display: inline-block;
+    margin-top: 2%;
+    width: fit-content;
+    padding: 1% 2%;
+    width: -moz-fit-content;
+    background-color: var(--mainbgcolor);
+    color: var(--maincolor);
+    border-radius: .4em;
+    font-size: 95%;
+}
+
+.blog-space {
+    display: block;
+    position: relative;
+    height: 5%;
+}
+
+#blog-reset {
+    position: fixed;
+    bottom: -20%;
+    left: 0%;
+    width: 100%;
+    padding: 2%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.87);
+    z-index: 150;
+    text-align: center;
+    transition: .6s;
+}
+
+#blog-reset span {
+    color: var(--maincolor);
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,700');
+
+:root {
+    --maincolor: #001E60;
+    --mainbgcolor: rgba(11, 61, 168, 0.1);
+}
+
+body, 
+html {
+    min-width: 1200px;
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html, 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span {
+    font-family: 'Assistant', sans-serif;
+    font-size: 100%;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-shadow: 0 0 2px rgba(0, 0, 0, .3);
+}
+
+@media screen and (min-width: 1800px) {
+    html, 
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    div,
+    span {
+        font-size: 136%;
+    }
+
+    div div,
+    div span {
+        font-size: 100%;
+    }
+
+    body h1 {
+        font-size: 167%;
+    }
+
+    body h3 {
+        font-size: 150%;
+    }
+
+    body h4 {
+        font-size: 127%;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-shadow: 0 0 3px rgba(0, 0, 0, .33);
+    }
+}
+
+h1,
+h3,
+h6 {
+    text-align: center;
+}

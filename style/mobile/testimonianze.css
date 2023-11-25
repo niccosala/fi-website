@@ -1,0 +1,16 @@
+.section:nth-child(odd) {
+    background-color: white;
+}
+
+.section:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.feedback-who {
+    font-weight: bold;
+    color: var(--maincolor);
+    text-align: center;
+    margin-top: 5%;
+    display: block;
+}
+

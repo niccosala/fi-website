@@ -1,0 +1,93 @@
+.service-exposer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1% 0;
+}
+
+.service-exposer div {
+    width: 50%;
+    display: flex;
+}
+
+.service-exposer img {
+    width: 98%;
+}
+
+.service-exposer span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-exposer a {
+    text-decoration: none;
+    background-color: var(--maincolor);
+    color: white;
+    margin-top: 3%;
+    padding: 2%;
+    width: -moz-fit-content;
+    font-size: 100%;
+    border-radius: .4em;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+    width: fit-content;
+    opacity: 0.8;
+    transition: .2s;
+}
+
+div.service-image {
+    align-items: center;
+}
+
+div.service-image img {
+    border-radius: .4em;
+    box-shadow: 0 0 18px rgba(0, 0, 0, .25);
+}
+
+div.service-image:nth-child(odd) {
+    padding-right: 2%;
+}
+
+div.service-image:nth-child(even) {
+    padding-left: 3%;
+}
+
+div.service-description {
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.service-description span {
+    display:inline;
+}
+
+.customized-service {
+    width: 100%;
+    text-align: center;
+    margin-top: 3.5%;
+}
+
+#customized {
+    padding: 1.8%;
+    font-size: 112%;
+    margin-bottom: 3.5%;
+}
+
+.service-exposer a:hover {
+    opacity: 1;
+}
+
+.service-description h4 {
+    text-align: left;
+    padding-bottom: 2.5%;
+    border-bottom: 1px solid var(--mainbgcolor);
+}
+
+.service-description span {
+    padding-bottom: 2.5%;
+    border-bottom: 1px solid var(--mainbgcolor);
+}
