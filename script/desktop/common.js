@@ -13,3 +13,14 @@ function closeMenu() {
 function showLoading() {
     document.getElementById("form-loading").style.bottom = "2%";
 }
+
+function checkIfMobile() {
+    // /iPhone|iPad|iPod|Android/i.test(navigator.userAgent); -> Considera anche iPad
+    const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile) {
+        var url = window.location.pathname;
+        var filename = url.substring(url.lastIndexOf('/')+1);
+        
+        location.href = "m." + filename;
+    }
+}

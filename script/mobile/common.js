@@ -13,3 +13,14 @@ function closeMenu() {
 function showLoading() {
     document.getElementById("form-loading").style.bottom = "2%";
 }
+
+function checkIfDesktop() {
+    const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
+    if (!isMobile) {
+        var url = window.location.pathname;
+        url = url.substring(url.lastIndexOf('/')+1);
+        var filename = url.substring(2)
+        
+        location.href = filename;
+    }
+}
