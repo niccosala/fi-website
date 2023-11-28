@@ -13,6 +13,27 @@
     <script src="script/mobile/contattami.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
+    <script>
+        var wasSubmittedC = false;    
+        var wasSubmittedCV = false;
+
+          function checkBeforeSubmitC(){
+            if(!wasSubmittedC) {
+              wasSubmittedC = true;
+              return wasSubmittedC;
+            }
+            return false;
+          }    
+
+          function checkBeforeSubmitCV(){
+            if(!wasSubmittedCV) {
+              wasSubmittedCV = true;
+              return wasSubmittedCV;
+            }
+            return false;
+          }  
+    </script>
+
 	<title>Federico Invernizzi: Contattami</title>
 </head>
 <body>
@@ -72,7 +93,8 @@
                 </span>
             </div>
         </div>
-        <form method="POST" id="form-contact-me" action="elab-form.php">
+
+        <form method="POST" onsubmit="return checkBeforeSubmitC();" id="form-contact-me" action="elab-form.php">
             <span>Nome e cognome<sup>*</sup></span>
             <input type="text" name="cnt-name" title="" placeholder="es. Mario Rossi" required>
             <span>Email<sup>*</sup></span>
@@ -92,7 +114,7 @@
             <input type="submit" class="form-submit" name="cnt-confirm" id="submit-contact-me" value="Contattami" disabled>
         </form>
 
-        <form method="POST" id="form-work-with-me" action="elab-form.php" enctype="multipart/form-data">
+        <form method="POST" onsubmit="return checkBeforeSubmitCV();" id="form-work-with-me" action="elab-form.php" enctype="multipart/form-data">
             <span>Nome e cognome<sup>*</sup></span>
             <input type="text" name="wwm-name" title="" placeholder="es. Mario Rossi" required>
             <span>Email<sup>*</sup></span>
@@ -121,7 +143,7 @@
         Viale Carlo Cattaneo, 33 – 20081 Abbiategrasso (MI)
         <div class="contattami-map-container">
             <div id="gmap-canvas">
-                <iframe title="Sede legale" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Viale+Carlo+Cattaneo,+33,+20081+Abbiategrasso,+MI,+Italia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                <iframe title="Sede legale" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Viale+Carlo+Cattaneo,+33,+20081+Abbiategrasso,+MI,+Italia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" allowfullscreen></iframe>
             </div>
         </div>
     </div>

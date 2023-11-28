@@ -19,7 +19,6 @@ require 'PHPMailer/src/SMTP.php';
 
 require 'config.php';
 
-
 function fetchAttachments($mailObject, $fieldName) {
 	if(isset($_FILES[$fieldName]["name"])) {
         $numFile = count($_FILES[$fieldName]["name"]);
@@ -40,30 +39,31 @@ session_start();
 $_SESSION['fi'] = 'form';
 $source = "index.html";
 
-
 if(!isset($_POST["ap-confirm"]) and !isset($_POST["e-confirm"]) and !isset($_POST["pm-confirm"]) and !isset($_POST["cnt-confirm"]) and !isset($_POST["wwm-confirm"])) {
 	session_destroy();
     header("Location: index.html");
 }
 
 $mail = new PHPMailer(true);
-$mail -> SMTPAuth = true;    
-$mail -> Host = "smtp.gmail.com";
-$mail -> SMTPSecure = "ssl";
-$mail -> Port = 465;
-$mail -> Username = $USERNAME;
-$mail -> Password = $PASSWORD;
+
+$mail->isSMTP();
+$mail->Host = 'smtp.gmail.com';
+$mail->SMTPAuth = true;
+$mail->Username = $USERNAME;
+$mail->Password = $PASSWORD;
+$mail->SMTPSecure = 'ssl';
+$mail->Port = 465;
+
 $mail -> setFrom($USERNAME);
 $mail -> addAddress($USERNAME);
-$mail -> addReplyTo($USERNAME);
 $mail -> isHTML(true);
 $mail -> Subject = "";
 $mail -> Body = "";
 
 // SERVIZI =================================================================
-// Analisi posizioni
+// Analisi posizioni (Checkup gratuito)
 if(isset($_POST["ap-confirm"])) {
-	$mail -> Subject = "Richiesta Analisi delle posizioni assicurative e finanziarie in essere";
+	$mail -> Subject = "Richiesta Analisi Checkup Gratuito";
     $mail -> Body = $_POST["ap-gender"] . " " .
     		   "<b>" . addslashes($_POST["ap-name"]) . "</b>" .
                "<br>Professione<b>: " . addslashes($_POST["ap-job"]) . 
@@ -79,7 +79,7 @@ if(isset($_POST["ap-confirm"])) {
 
 // Evento
 else if(isset($_POST["e-confirm"])) {
-	$mail -> Subject = "Evento";
+	$mail -> Subject = "Richiesta Evento";
     $mail -> Body = "<b>" . addslashes($_POST["e-name"]) . "</b>" .
                "<br><br>Telefono<b>: " . $_POST["e-tel"] .
                "</b><br>Email<b>: " . addslashes($_POST["e-email"]) . 
@@ -90,9 +90,9 @@ else if(isset($_POST["e-confirm"])) {
     $source = "servizi.html";
 }
 
-// Pianificazione assicurativa
+// Pianificazione assicurativa (Diagnosi 360°)
 else if(isset($_POST["pm-confirm"])) {
-	$mail -> Subject = "Richiesta Pianificazione assicurativa e patrimoniale completa";
+	$mail -> Subject = "Richiesta Diagnosi 360°";
     $mail -> Body = $_POST["pm-gender"] . " " .
     		   "<b>" . addslashes($_POST["pm-name"]) . "</b>" .
                "<br>Professione<b>: " . addslashes($_POST["pm-job"]) . 
@@ -113,34 +113,34 @@ else if(isset($_POST["cnt-confirm"])) {
     $mail -> Body = "<b>" . addslashes($_POST["cnt-name"]) . "</b> " .
     		   "<br>Email:<b> " . $_POST["cnt-mail"] . "</b>" .
                "<br>Telefono<b>: " . $_POST["cnt-tel"] . "</b>" .
-               "<br><br>Messaggio<b>: " . addslashes($_POST["cnt-message"]) . "</b><br><br>";
+               "<br><br>Messaggio<b>: " . addslashes($_POST["cnt-msg"]) . "</b><br><br>";
 
     $source = "contattami.html";
 }
 
 // Lavora con me
 else if(isset($_POST["wwm-confirm"])) {
-    $mail -> Subject = "Richiesta di contatto";
+    $mail -> Subject = "Richiesta di collaborazione";
     $mail -> Body = "<b>" . addslashes($_POST["wwm-name"]) . "</b> " .
     		   "<br>Email:<b> " . $_POST["wwm-mail"] . "</b>" .
                "<br>Telefono<b>: " . $_POST["wwm-tel"] . "</b>" .
-               "<br><br>Messaggio<b>: " . addslashes($_POST["wwm-message"]) . "</b><br><br>";
+               "<br><br>Messaggio<b>: " . addslashes($_POST["wwm-msg"]) . "</b><br><br>";
 
     $fileFetched = fetchAttachments($mail, "wwm-file");
     $source = "contattami.html";
 }
 
 // LAYOUT =================================================================
-
 echo '<img class="elab-img" src="resources/images/logo/horizontal/FI_logo_affiancato.png">';
 
 if(!$mail -> send()) 
     echo '<h3 class="elab-desc">Errore nell\'invio della richiesta: ' . $mail -> ErrorInfo . '. Riprova più tardi.</h3>';
 else 
-    echo '<h3 class="elab-desc">La richiesta è stata inviata con successo.</h3>';
+    echo '<h3 class="elab-desc">La richiesta è stata inviata con successo. Non ricaricare la pagina, verrai reindirizzato al sito a breve.</h3>';
     
 session_destroy();
 header("Refresh: 4; url=" . $source);
+
 ?>
 
 </body>

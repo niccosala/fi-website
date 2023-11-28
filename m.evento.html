@@ -14,7 +14,18 @@
     <script src="script/mobile/servizi-dettaglio.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-	<title>Federico Invernizzi: Evento</title>
+	<script type="text/javascript">
+        var wasSubmittedEm = false;    
+          function checkBeforeSubmit(){
+            if(!wasSubmittedEm) {
+              wasSubmittedEm = true;
+              return wasSubmittedEm;
+            }
+            return false;
+          }    
+    </script>
+    
+    <title>Federico Invernizzi: Evento</title>
 </head>
 <body>
 
@@ -83,7 +94,7 @@
     <div class="section">
         <span class="ref" id="form"></span>
         <h4 align="center">Richiedi un evento dedicato</h4><br><br>
-        <form method="POST" id="form" action="elab-form.php">
+        <form method="POST" onsubmit="return checkBeforeSubmit();" id="form" action="elab-form.php">
             <span>Nome e cognome<sup>*</sup></span>
             <input type="text" name="e-name" title="" placeholder="es. Mario Rossi" required>
             <span>Email<sup>*</sup></span>
@@ -104,7 +115,7 @@
                 </label>
             </span>
             <input type="reset" value="Cancella" onclick="disableSubmit()">
-            <input type="submit" class="form-submit" name="confirm" id="submit" value="Contattami" disabled>
+            <input type="submit" class="form-submit" name="e-confirm" id="submit" value="Contattami" disabled>
         </form>
     </div>
 

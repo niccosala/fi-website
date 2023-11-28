@@ -12,4 +12,3 @@ function triggerSubmit() {
     } else 
         disableSubmit();
 }
-

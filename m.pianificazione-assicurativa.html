@@ -14,7 +14,18 @@
     <script src="script/mobile/servizi-dettaglio.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-	<title>Federico Invernizzi: Diagnosi 360°</title>
+	<script type="text/javascript">
+        var wasSubmittedPMm = false;    
+          function checkBeforeSubmit(){
+            if(!wasSubmittedPMm) {
+              wasSubmittedPMm = true;
+              return wasSubmittedPMm;
+            }
+            return false;
+          }    
+    </script>
+    
+    <title>Federico Invernizzi: Diagnosi 360°</title>
 </head>
 <body>
 
@@ -98,7 +109,7 @@
         <b>contratti assicurativi e finanziari che possiedi attualmente
         in formato jpg o pdf</b>.<br><br>
 
-        <form method="POST" id="form" action="elab-form.php">
+        <form method="POST" onsubmit="return checkBeforeSubmit();" id="form" action="elab-form.php">
             <span>Nome e cognome<sup>*</sup></span>
             <input type="text" name="pm-name" title="" placeholder="es. Mario Rossi" required>
             <span>Professione<sup>*</sup></span>
@@ -131,7 +142,7 @@
             </span>                
 
             <input type="reset" value="Cancella" onclick="disableSubmit()">
-            <input type="submit" class="form-submit" name="confirm" id="submit" value="Contattami" disabled>
+            <input type="submit" class="form-submit" name="pm-confirm" id="submit" value="Contattami" disabled>
         </form>
     </div>
 
