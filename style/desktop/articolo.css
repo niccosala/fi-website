@@ -79,6 +79,26 @@
     transition: .3s;
 }
 
+.articolo-container a.to-contacts {
+    color: var(--maincolor);
+    background-color: transparent;
+    padding: 0;
+    text-decoration: underline;
+    display: inline;
+    opacity: 1;
+}
+
+.embedding {
+    width: 100%;
+}
+
+span.signature {
+    font-family: 'Whisper', sans-serif;
+    display: block;
+    font-size: 280%;
+    margin-top: 1.5%;
+}
+
 .share {
     background-color: var(--maincolor);
     color: white;

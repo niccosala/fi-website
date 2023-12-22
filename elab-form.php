@@ -63,7 +63,7 @@ $mail -> Body = "";
 // SERVIZI =================================================================
 // Analisi posizioni (Checkup gratuito)
 if(isset($_POST["ap-confirm"])) {
-	$mail -> Subject = "Richiesta Analisi Checkup Gratuito";
+	$mail -> Subject = "Richiesta Analisi Check-Up Gratuito";
     $mail -> Body = $_POST["ap-gender"] . " " .
     		   "<b>" . addslashes($_POST["ap-name"]) . "</b>" .
                "<br>Professione<b>: " . addslashes($_POST["ap-job"]) . 
