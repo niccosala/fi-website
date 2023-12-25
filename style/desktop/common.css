@@ -178,6 +178,8 @@ div.footer a {
     font-size: 85%;
     margin-right: 1.5%;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 
 div.footer span {
@@ -186,9 +188,22 @@ div.footer span {
     font-size: 85%;
 }
 
+div.footer span:first-child {
+    width: 35%;
+}
+
 div.footer svg {
     transform: scale(1.75);
     margin-right: 2.5%;
+    cursor: pointer;
+}
+
+div.footer div:first-child a {
+    font-size: 100%;
+    color: black;
+    text-decoration: underline;
+    margin-right: 0;
+    display: inline;
 }
 
 /* COMPONENTS */

@@ -24,3 +24,15 @@ function checkIfDesktop() {
         location.href = filename;
     }
 }
+
+function goToInstagram() {
+    window.open("https://instagram.com");
+}
+
+function goToLinkedin() {
+    window.open("https://it.linkedin.com/in/");
+}
+
+function goToYoutube() {
+    window.open("https://youtube.com");
+}

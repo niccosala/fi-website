@@ -333,6 +333,8 @@ div.footer a {
     display: block;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
+    color: white;
+    text-decoration: none;
 }
 
 div.footer a:first-child {
@@ -371,6 +373,14 @@ div.footer svg {
 
 div.footer svg:last-child {
     margin-right: 0;
+}
+
+div.footer div:first-child a {
+    font-size: 100%;
+    color: black;
+    text-decoration: underline;
+    margin-right: 0;
+    display: inline;
 }
 
 .footer-desc {
