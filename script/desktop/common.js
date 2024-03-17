@@ -29,7 +29,7 @@ function checkIfMobile() {
 }
 
 function goToInstagram() {
-    window.open("https://instagram.com");
+    window.open("https://www.instagram.com/theriskadvisor_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==");
 }
 
 function goToLinkedin() {
@@ -37,5 +37,5 @@ function goToLinkedin() {
 }
 
 function goToYoutube() {
-    window.open("https://youtube.com");
+    window.open("https://www.youtube.com/@theriskadvisor_");
 }
