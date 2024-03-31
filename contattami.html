@@ -38,7 +38,7 @@
     
     <title>Federico Invernizzi: Contattami</title>
 </head>
-<body onload="checkIfMobile()">
+<body onload="checkIfMobile(); showCookieBanner();">
 
     <!-- Header -->
     <div class="header">
@@ -228,6 +228,11 @@
         </span>
         <span></span>
     </div>
+
+    <span id="cookie-banner">
+        <p>Questo sito web utilizza i cookie per migliorare l'esperienza degli utenti. Continuando a navigare su questo sito, accetti il nostro utilizzo dei cookie. <p>
+        <span onclick="location.href='./resources/documents/FI_Cookie.pdf'">Consulta la Cookie Policy</span><span onclick="hideCookieBanner()">Accetta e continua a navigare sul sito</span>
+    </span>
 
     <span id="dark-panel" onclick="closeMenu()"></span>
 

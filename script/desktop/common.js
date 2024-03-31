@@ -39,3 +39,50 @@ function goToLinkedin() {
 function goToYoutube() {
     window.open("https://www.youtube.com/@theriskadvisor_");
 }
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var cookieArray = decodedCookie.split(';');
+
+    for(var i = 0; i < cookieArray.length; i++) {
+        var cookie = cookieArray[i];
+        while (cookie.charAt(0) === ' ') {
+            cookie = cookie.substring(1);
+        }
+        if (cookie.indexOf(name) === 0) {
+            return cookie.substring(name.length, cookie.length);
+        }
+    }
+    return "";
+}
+
+function checkAndCreateCookie(cookieName, expireTime) {
+    var existingCookie = getCookie(cookieName);
+
+    if (existingCookie === "") {
+        
+        var currentDate = new Date();
+        var expireDate = new Date(currentDate.getTime() + expireTime * 1000 * 60); 
+
+         document.cookie = cookieName + "=valid;expires=" + expireDate.toUTCString() + ";path=/";
+        console.log("Cookie creato con successo!");
+        return true;
+    } else {
+        console.log("Il cookie esiste già.");
+        return false;
+    }
+}
+
+function showCookieBanner() {
+    var created = checkAndCreateCookie("banner", 30);
+
+    if(created) {
+        document.getElementById("cookie-banner").style.bottom = "0%";
+        console.log("Ciao")
+    }
+}
+
+function hideCookieBanner() {
+    document.getElementById("cookie-banner").style.bottom = "-20%";
+}

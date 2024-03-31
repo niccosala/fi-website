@@ -256,6 +256,34 @@ input[type="reset"] {
     margin-top: -8%;
 }
 
+/* Cookie Banner */
+#cookie-banner {
+    position: fixed;
+    bottom: -20%;
+    left: 0%;
+    width: 100%;
+    padding: 2%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.87);
+    z-index: 150;
+    text-align: center;
+    transition: .6s;
+}
+
+#cookie-banner p {
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+
+#cookie-banner span {
+    color: var(--maincolor);
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
 /* rotate */
 div.rotate {
     display: none;
