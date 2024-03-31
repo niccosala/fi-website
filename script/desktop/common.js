@@ -79,7 +79,6 @@ function showCookieBanner() {
 
     if(created) {
         document.getElementById("cookie-banner").style.bottom = "0%";
-        console.log("Ciao")
     }
 }
 

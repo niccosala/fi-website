@@ -72,14 +72,13 @@ function checkAndCreateCookie(cookieName, expireTime) {
 }
 
 function showCookieBanner() {
-    var created = checkAndCreateCookie("banner", 30);
+    var created = checkAndCreateCookie("banner", 0.1);
 
     if(created) {
         document.getElementById("cookie-banner").style.bottom = "0%";
-        console.log("Ciao")
     }
 }
 
 function hideCookieBanner() {
-    document.getElementById("cookie-banner").style.bottom = "-20%";
+    document.getElementById("cookie-banner").style.bottom = "-50%";
 }
