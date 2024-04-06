@@ -46,8 +46,7 @@ if(!isset($_POST["ap-confirm"]) and !isset($_POST["e-confirm"]) and !isset($_POS
 
 $mail = new PHPMailer(true);
 
-$mail->isSMTP();
-$mail->Host = 'smtp.gmail.com';
+$mail->Host = 'smtps.aruba.it';
 $mail->SMTPAuth = true;
 $mail->Username = $USERNAME;
 $mail->Password = $PASSWORD;
