@@ -52,7 +52,7 @@ div.header-stretched #menu-button {
     bottom: -80%;
     left: 0;
     width: 100%;
-    z-index: 120;
+    z-index: 3000;
     background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 5px 0px 8px 0px rgba(0,0,0,0.05); 
     box-shadow: 5px 0px 8px 0px rgba(0,0,0,0.05);
@@ -189,9 +189,9 @@ input[type="reset"] {
 #dark-panel {
     position: fixed;
     bottom: 100%;
-    width: 100%;
+    width: 110%;
     height: 100%;
-    left: 0;
+    left: -5%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 110;
     transition: 1s;
