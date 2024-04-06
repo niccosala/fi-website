@@ -111,7 +111,7 @@
         <b>contratti assicurativi e finanziari che possiedi attualmente
         in formato jpg o pdf</b>.<br><br>
 
-        <form method="POST" onsubmit="return checkBeforeSubmit();" id="form" action="elab-form.php">
+        <form method="POST" onsubmit="showLoading(); return checkBeforeSubmit();" id="form" action="elab-form.php">
             <span>Nome e cognome<sup>*</sup></span>
             <input type="text" name="pm-name" title="" placeholder="es. Mario Rossi" required>
             <span>Professione<sup>*</sup></span>
@@ -209,6 +209,20 @@
     </span>
 
     <span id="dark-panel" onclick="closeMenu()"></span>
+
+    <div id="form-loading">
+        <span>
+            <img src="resources/images/loading/loading.gif" alt="">
+        </span>
+        <span>
+            Stiamo elaborando la tua richiesta, ci vorr&agrave; qualche secondo.<br>
+            <p>
+                Ti preghiamo di non ricaricare la pagina e di non cliccare sulla freccia 
+                indietro del browser
+            </p>
+        </span>
+        <span></span>
+    </div>
 
     <div class="rotate">
         <img src="resources/images/logo/logo.jpeg" alt="">

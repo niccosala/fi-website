@@ -96,7 +96,7 @@
     <div class="section">
         <span class="ref" id="form"></span>
         <h4 align="center">Richiedi un evento dedicato</h4><br><br>
-        <form method="POST" onsubmit="return checkBeforeSubmit();" id="form" action="elab-form.php">
+        <form method="POST" onsubmit="showLoading(); return checkBeforeSubmit();" id="form" action="elab-form.php">
             <span>Nome e cognome<sup>*</sup></span>
             <input type="text" name="e-name" title="" placeholder="es. Mario Rossi" required>
             <span>Email<sup>*</sup></span>
@@ -185,6 +185,20 @@
 
     <span id="dark-panel" onclick="closeMenu()"></span>
 
+    <div id="form-loading">
+        <span>
+            <img src="resources/images/loading/loading.gif" alt="">
+        </span>
+        <span>
+            Stiamo elaborando la tua richiesta, ci vorr&agrave; qualche secondo.<br>
+            <p>
+                Ti preghiamo di non ricaricare la pagina e di non cliccare sulla freccia 
+                indietro del browser
+            </p>
+        </span>
+        <span></span>
+    </div>
+    
     <div class="rotate">
         <img src="resources/images/logo/logo.jpeg" alt="">
         <span class="line"></span>

@@ -52,7 +52,7 @@ div.header-stretched #menu-button {
     bottom: -80%;
     left: 0;
     width: 100%;
-    z-index: 3000;
+    z-index: 180;
     background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 5px 0px 8px 0px rgba(0,0,0,0.05); 
     box-shadow: 5px 0px 8px 0px rgba(0,0,0,0.05);
@@ -185,6 +185,44 @@ input[type="reset"] {
     transition: .2s;
 }
 
+#form-loading {
+    position: fixed;
+    bottom: -40%;
+    left: 10%;
+    width: 80%;
+    padding: 2%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .12);
+    border-radius: .4em;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 1s;
+}
+
+#form-loading span:nth-child(2) {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+#form-loading img {
+    height: 5vh;
+}
+
+#form-loading p {
+    color: grey;
+    text-shadow: 0;
+    margin-bottom: -.1%;
+    text-decoration: none;
+}
+
+#form-loading span:nth-child(3) {
+    width: 5%;
+}
+
 /* Dark panel */
 #dark-panel {
     position: fixed;
@@ -301,7 +339,7 @@ div.rotate {
     align-items: center;
     flex-direction: row;
     text-align: center;
-    z-index: 200;
+    z-index: 500;
 }
 
 div.rotate img {
@@ -336,6 +374,10 @@ div.rotate h6 {
 @media (orientation: landscape) {
     div.rotate {
       display: flex;
+    }
+
+    #menu {
+        display: none;
     }
 }
 
