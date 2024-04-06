@@ -478,11 +478,13 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     transition: 1s;
 }
 
 #form-loading span:nth-child(2) {
     text-align: center;
+    text-decoration: none;
     width: 100%;
 }
 
@@ -495,6 +497,7 @@ label {
     font-size: 70%;
     text-shadow: 0;
     margin-bottom: -.1%;
+    text-decoration: none;
 }
 
 #form-loading span:nth-child(3) {
