@@ -14,7 +14,6 @@ body, html {
     box-sizing: border-box;
     height: 88vh;
     flex-direction: column;
-    background-image: url("/resources/images/backgrounds/index-mobile.png");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;

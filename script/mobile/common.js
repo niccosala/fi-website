@@ -72,7 +72,7 @@ function checkAndCreateCookie(cookieName, expireTime) {
 }
 
 function showCookieBanner() {
-    var created = checkAndCreateCookie("banner", 30);
+    var created = checkAndCreateCookie("mbanner", 30);
 
     if(created) {
         document.getElementById("cookie-banner").style.bottom = "0%";
