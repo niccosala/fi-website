@@ -15,7 +15,7 @@ div.header-stretched {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     position: fixed;
-    z-index: 5000;
+    z-index: 4999;
     top: 0;
     left: 0;
     display: flex;
@@ -114,7 +114,7 @@ div.header-stretched .icon {
     width: 25%;
     min-width: 120px;
     height: 100%;
-    z-index: 3000;
+    z-index: 5000;
     background-color: white;
     -webkit-box-shadow: 5px 0px 8px 0px rgba(0,0,0,0.05); 
     box-shadow: 5px 0px 8px 0px rgba(0,0,0,0.05);
