@@ -22,7 +22,7 @@ function checkIfMobile() {
         var filename = url.substring(url.lastIndexOf('/')+1);
 
         if(filename == "")
-            filename = "index.html";
+            filename = "homepage.html";
         
         location.href = "m." + filename;
     }

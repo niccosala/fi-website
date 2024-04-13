@@ -568,3 +568,11 @@ a.text-link {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+@keyframes pulse {
+    0% { opacity: .3; }
+    50% { opacity: 1; }
+    50% { transform: scale(1.1); }
+    100% { opacity: .3; }
+    100% { transform: scale(1); }
+}

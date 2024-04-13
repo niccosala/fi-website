@@ -37,11 +37,11 @@ function fetchAttachments($mailObject, $fieldName) {
 
 session_start();
 $_SESSION['fi'] = 'form';
-$source = "index.html";
+$source = "homepage.html";
 
 if(!isset($_POST["ap-confirm"]) and !isset($_POST["e-confirm"]) and !isset($_POST["pm-confirm"]) and !isset($_POST["cnt-confirm"]) and !isset($_POST["wwm-confirm"])) {
 	session_destroy();
-    header("Location: index.html");
+    header("Location: homepage.html");
 }
 
 $mail = new PHPMailer(true);
