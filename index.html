@@ -16,13 +16,14 @@
     </div>
 
     <script>
-        const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
-        if (isMobile) 
-            location.href = "m.homepage.html";
-        else
-            location.href = "homepage.html";
-        
-    </script>
+        setTimeout(function() {
+            const isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) 
+                location.href = "m.homepage.html";
+            else
+                location.href = "homepage.html";
+        }, 1500);
+    </script>    
 
 </body>
 </html>

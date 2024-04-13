@@ -23,9 +23,9 @@ body, html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-position: top center; 
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #welcome-video {

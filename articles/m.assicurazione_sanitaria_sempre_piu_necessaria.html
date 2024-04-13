@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../style/mobile/articolo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <link rel="icon" href="./resources/images/logo/logo-small.jpeg">
+    <link rel="icon" href="../resources/images/logo/logo-small.jpeg">
     
     <script src="../script/mobile/common.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
@@ -178,7 +178,33 @@
         </div>
     </div>
 
-    <!-- Components -->
+     <!-- Components -->
+     <span id="dark-panel" onclick="closeMenu()"></span>
+
+     <div class="rotate">
+         <img src="../resources/images/logo/logo.jpeg" alt="">
+         <span class="line"></span>
+         <span class="descritpion">
+             <h1>La tua porta d'accesso al mondo assicurativo e finanziario</h1>
+ 
+             <span>
+                 <h6><br></h6>
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                     <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                     <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+                 </svg>
+                 Ruota il telefono in verticale per continuare la navigazione
+             </span>
+         </span>
+     </div>
+
+     <a href="../m.blog.html" class="back">
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+             <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+         </svg>&nbsp;
+         Torna al blog
+     </a>
+ 
     <div id="menu">
         <span onclick="closeMenu()">
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
@@ -198,32 +224,6 @@
         <p>Questo sito web utilizza i cookie per migliorare l'esperienza degli utenti. Continuando a navigare su questo sito, accetti il nostro utilizzo dei cookie. <p>
         <span onclick="location.href='./resources/documents/FI_Cookie.pdf'">Consulta la Cookie Policy</span><span onclick="hideCookieBanner()">Accetta e continua a navigare sul sito</span>
     </span>
-
-    <span id="dark-panel" onclick="closeMenu()"></span>
-
-    <a href="../m.blog.html" class="back">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
-            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
-        </svg>&nbsp;
-        Torna al blog
-    </a>
-
-    <div class="rotate">
-        <img src="../resources/images/logo/logo.jpeg" alt="">
-        <span class="line"></span>
-        <span class="descritpion">
-            <h1>La tua porta d'accesso al mondo assicurativo e finanziario</h1>
-
-            <span>
-                <h6><br></h6>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
-                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
-                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
-                </svg>
-                Ruota il telefono in verticale per continuare la navigazione
-            </span>
-        </span>
-    </div>
 
 </body>
 </html>

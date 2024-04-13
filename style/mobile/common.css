@@ -224,15 +224,14 @@ input[type="reset"] {
 }
 
 /* Dark panel */
-#dark-panel {
+span#dark-panel {
     position: fixed;
-    bottom: 100%;
     width: 110%;
     height: 100%;
     left: -5%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 110;
-    transition: 1s;
+    transition: 1.2s;
 }
 
 /* Section */
@@ -339,7 +338,7 @@ div.rotate {
     align-items: center;
     flex-direction: row;
     text-align: center;
-    z-index: 500;
+    z-index: 5000;
 }
 
 div.rotate img {
