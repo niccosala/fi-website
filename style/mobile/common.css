@@ -21,7 +21,7 @@ div.header-stretched {
 }
 
 div.header-stretched .icon {
-    width: 95%; 
+    width: 100%; 
     height: auto;
 }
 
@@ -30,8 +30,8 @@ div.header-stretched {
 }
 
 div.header-stretched div:first-child {
-    width: 60%;
-    margin: 0 5% 0 10%;
+    width: 62.5%;
+    margin: 0 2.5% 0 10%;
 }
 
 div.header-stretched div:last-child {
